@@ -26,7 +26,8 @@ namespace ServerSideSocket
             listener.Start();
 
             while (!stop)
-            {
+            { 
+                Console.Clear();
                 Console.WriteLine("Server is ready for a client to connect.");
 
                 Socket clientSocket = listener.AcceptSocket();
