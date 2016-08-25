@@ -8,11 +8,10 @@ namespace ServerSideSocket
 {
     class Program
     {
-        private bool stop;
-
         static void Main(string[] args)
         {
-
+            ServerSideSocket server = new ServerSideSocket(45000);
+            server.Run();
         }
     }
 }

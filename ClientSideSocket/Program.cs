@@ -8,11 +8,10 @@ namespace ClientSideSocket
 {
     class Program
     {
-        private bool stop;
-
         static void Main(string[] args)
         {
-
+            ClientSideSocket client = new ClientSideSocket("127.0.0.1", 45000);
+            client.Run();
         }
     }
 }
